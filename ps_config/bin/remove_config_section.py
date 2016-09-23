@@ -20,7 +20,7 @@ def main():
 
     args = parser.parse_args()
 
-    config=lib.ps_config(args.path)
+    config = lib.ps_config(args.path)
     config.remove_section(args.section_name)
 
 if __name__ == "__main__":
