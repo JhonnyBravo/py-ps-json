@@ -23,12 +23,12 @@ def main():
 
     args = parser.parse_args()
 
-    config=lib.ps_config(args.path)
-    result=config.get_option_list(args.section_name)
+    config = lib.ps_config(args.path)
+    result = config.get_option_list(args.section_name)
 
-    if len(result)>0:
+    if len(result) > 0:
         for i in result:
-            print(i[0]+" = "+i[1])
+            print(i[0] + " = " + i[1])
 
 if __name__ == "__main__":
     main()
