@@ -14,7 +14,7 @@ class ps_config():
 
     def test_path(self):
         if not os.path.exists(self.path):
-            print(self.path+" は存在しません。")
+            print(self.path + " は存在しません。")
             sys.exit(1)
 
     def get_section_list(self):
@@ -26,7 +26,7 @@ class ps_config():
         self.test_path()
 
         if not self.config.has_section(section_name):
-            print(section_name+" は存在しません。")
+            print(section_name + " は存在しません。")
             sys.exit(1)
 
         option_list = self.config.items(section_name)
@@ -36,11 +36,11 @@ class ps_config():
         self.test_path()
 
         if not self.config.has_section(section_name):
-            print(section_name+" は存在しません。")
+            print(section_name + " は存在しません。")
             sys.exit(1)
 
-        if not self.config.has_option(section_name,option_name):
-            print(option_name+" は存在しません。")
+        if not self.config.has_option(section_name, option_name):
+            print(option_name + " は存在しません。")
             sys.exit(1)
 
         option_value = self.config.get(section_name, option_name)
