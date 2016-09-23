@@ -26,8 +26,8 @@ def main():
 
     args = parser.parse_args()
 
-    config=lib.ps_config(args.path)
-    config.set_option(args.section_name,args.option_name,args.value)
+    config = lib.ps_config(args.path)
+    config.set_option(args.section_name, args.option_name, args.value)
 
 if __name__ == "__main__":
     main()
