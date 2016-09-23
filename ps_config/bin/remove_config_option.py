@@ -23,8 +23,8 @@ def main():
 
     args = parser.parse_args()
 
-    config=lib.ps_config(args.path)
-    config.remove_option(args.section_name,args.option_name)
+    config = lib.ps_config(args.path)
+    config.remove_option(args.section_name, args.option_name)
 
 if __name__ == "__main__":
     main()
