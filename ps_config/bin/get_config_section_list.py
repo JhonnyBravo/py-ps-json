@@ -17,10 +17,10 @@ def main():
 
     args = parser.parse_args()
 
-    config=lib.ps_config(args.path)
-    result=config.get_section_list()
+    config = lib.ps_config(args.path)
+    result = config.get_section_list()
 
-    if len(result)>0:
+    if len(result) > 0:
         for i in result:
             print(i)
 
