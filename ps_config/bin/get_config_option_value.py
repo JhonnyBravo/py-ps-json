@@ -25,8 +25,8 @@ def main():
 
     args = parser.parse_args()
 
-    config=lib.ps_config(args.path)
-    result=config.get_option_value(args.section_name,args.option_name)
+    config = lib.ps_config(args.path)
+    result = config.get_option_value(args.section_name, args.option_name)
 
     print(result)
 
