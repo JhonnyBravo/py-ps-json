@@ -19,7 +19,7 @@ def main():
         help="値を取得する key の名前。")
 
     args = parser.parse_args()
-    result = lib.get_key_value(args.path,args.key_name)
+    result = lib.get_key_value(args.path, args.key_name)
 
     print(result)
 
