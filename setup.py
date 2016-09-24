@@ -9,22 +9,20 @@ except Exception:
     long_description = ""
 
 setup(
-    name="py-ps-config",
-    version="1.1",
-    description="Management utilities for config files.",
+    name="py-ps-json",
+    version="1.0",
+    description="Management utilities for json files.",
     author="Jhonny Bravo",
     author_email="sanfranceshika5@gmail.com",
-    url="https://github.com/JhonnyBravo/py-ps-config.git",
+    url="https://github.com/JhonnyBravo/py-ps-json.git",
     packages=find_packages(),
     long_description=long_description,
     entry_points={
         "console_scripts": [
-            "get_config_option_list=ps_config.bin.get_config_option_list:main",
-            "get_config_option_value=ps_config.bin.get_config_option_value:main",
-            "get_config_section_list=ps_config.bin.get_config_section_list:main",
-            "remove_config_option=ps_config.bin.remove_config_option:main",
-            "remove_config_section=ps_config.bin.remove_config_section:main",
-            "set_config_option=ps_config.bin.set_config_option:main"
+            "get_json_key_list=ps_json.bin.get_json_key_list:main",
+            "get_json_key_value=ps_json.bin.get_json_key_value:main",
+            "remove_json_key=ps_json.bin.remove_json_key:main",
+            "set_json_key=ps_json.bin.set_json_key:main"
         ]
     },
     classifiers=[
